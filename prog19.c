@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <locale.h>
 
+
 int main(){
     setlocale(LC_ALL,"Portuguese");
     int n;
-    printf("Informe um número: ");
+    printf("Informe um nÃºmero: ");
     scanf(" %d", &n);
-    for(int i=2; i < n / 4 ; i++){
+    for(int i=2; i <= n / 2 ; i++){
         if(n % i == 0){
-            printf("Resposta: Não é primo!\n");
+            printf("Resposta: NÃ£o Ã© primo!\n");
             return 0;
         }
     }
